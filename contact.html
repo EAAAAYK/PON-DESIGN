@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PON DESIGN</title>
+    <link rel="stylesheet" href="css/ress.css" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/contactStyle.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <a class="header-logo__link" href="index.html"
+          ><img
+            class="header-logo__image"
+            src="image/logo.svg"
+            alt="PON DESIGNのロゴ"
+        /></a>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list__item">
+              <a class="header-nav-list__link" href="news.html">NEWS</a>
+            </li>
+            <li class="header-nav-list__item">
+              <a class="header-nav-list__link" href="service.html">SERVICE</a>
+            </li>
+            <li class="header-nav-list__item">
+              <a class="header-nav-list__link" href="works.html">WORKS</a>
+            </li>
+            <li class="header-nav-list__item">
+              <a class="header-nav-list__link" href="company.html">COMPANY</a>
+            </li>
+            <li class="header-nav-list__item">
+              <a class="header-nav-list__link" href="recruit.html">RECRUIT</a>
+            </li>
+            <li class="header-nav-list__item">
+              <a class="header-nav-list__link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="hamburger-menu">
+          <span class="hamburger-menu__bar"></span>
+          <span class="hamburger-menu__bar"></span>
+          <span class="hamburger-menu__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="subpage-top news-top">
+      <h1 class="subpage-top__title news-top__title">CONTACT</h1>
+      <h2 class="subpage-top__subtitle news-top__subtitle">お問い合わせ</h2>
+    </div>
+
+    <div class="breadCrumbs">
+      <div class="container">
+        <a class="breadCrumbs__link" href="index.html">HOME</a>
+        <span class="breadCrumbs__link">CONTACT</span>
+      </div>
+    </div>
+
+    <main class="contact-page">
+      <div class="container">
+        <span class="contact-first-message"
+          >Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</span
+        >
+        <div class="contact-wrapper">
+          <form class="contact-form" action="" method="post">
+            <!-- お問い合わせ種別 -->
+            <fieldset style="border: none; padding: 0; margin: 0">
+              <legend class="contact-label">
+                お問い合わせ種別<span class="contact-required">*必須</span>
+              </legend>
+              <div class="radio-wrapper">
+                <label>
+                  <input
+                    type="radio"
+                    name="subject"
+                    value="お仕事のご依頼・ご相談"
+                    checked
+                  />お仕事のご依頼・ご相談</label
+                >
+                <label>
+                  <input
+                    type="radio"
+                    name="subject"
+                    value="お見積りのご依頼"
+                  />お見積りのご依頼
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="subject"
+                    value="採用について"
+                  />採用について
+                </label>
+                <label>
+                  <input type="radio" name="subject" value="その他" />その他
+                </label>
+              </div>
+            </fieldset>
+            <!-- お名前 -->
+            <div>
+              <label class="contact-label" for="name"
+                >お名前<span class="contact-required">*必須</span></label
+              >
+              <input
+                class="input-text"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+            </div>
+            <!-- 会社名 -->
+            <div>
+              <label class="contact-label" for="company-name"
+                >会社名<span class="contact-required">*必須</span></label
+              >
+              <input
+                class="input-text"
+                type="text"
+                name="company-name"
+                id="company-name"
+                required
+              />
+            </div>
+            <!-- メールアドレス -->
+            <div>
+              <label class="contact-label" for="mail"
+                >メールアドレス<span class="contact-required"
+                  >*必須</span
+                ></label
+              >
+              <input
+                class="input-text"
+                type="email"
+                name="mail"
+                id="mail"
+                required
+              />
+            </div>
+            <!-- 電話番号 -->
+            <div>
+              <label class="contact-label" for="tel"
+                >電話番号<span class="contact-additionalNote"
+                  >（半角数字ハイフンなし）</span
+                ></label
+              >
+              <input class="input-tel" name="tel" id="tel" type="tel" />
+            </div>
+            <!-- お問い合わせ内容 -->
+            <div>
+              <label class="contact-label" for="message"
+                >お問い合わせ内容</label
+              >
+              <textarea
+                class="textarea"
+                name="message"
+                id="message"
+                placeholder="お問い合わせ内容を具体的にご記入くださいませ。"
+              ></textarea>
+            </div>
+            <!-- PON DESIGNをどちらでお知りになりましたか？ -->
+            <div>
+              <label class="contact-label" for="how_did_you_hear"
+                >PON DESIGNをどちらでお知りになりましたか？<span
+                  class="contact-required"
+                  >*必須</span
+                ></label
+              >
+              <select
+                class="select"
+                name="how_did_you_hear"
+                id="how_did_you_hear"
+                required
+              >
+                <option value="">選択してください</option>
+                <option value="Google/Yahoo検索">Google/Yahoo検索</option>
+                <option value="SNS">SNS</option>
+                <option value="ブログ">ブログ</option>
+                <option value="友人や知人">友人や知人</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
+            <button class="c-btn btn-purple btn-contactForm" type="submit">
+              送信する
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="footer">
+      <nav class="footer-nav">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-list__item">
+            <a class="footer-nav-list__link" href="index.html">HOME</a>
+          </li>
+          <li class="footer-nav-list__item">
+            <a class="footer-nav-list__link" href="news.html">NEWS</a>
+          </li>
+          <li class="footer-nav-list__item">
+            <a class="footer-nav-list__link" href="service.html">SERVICE</a>
+          </li>
+          <li class="footer-nav-list__item">
+            <a class="footer-nav-list__link" href="works.html">WORKS</a>
+          </li>
+          <li class="footer-nav-list__item">
+            <a class="footer-nav-list__link" href="company.html">COMPANY</a>
+          </li>
+          <li class="footer-nav-list__item">
+            <a class="footer-nav-list__link" href="recruit.html">RECRUIT</a>
+          </li>
+          <li class="footer-nav-list__item">
+            <a class="footer-nav-list__link" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <span class="copyright">&copy; PON DESIGN</span>
+      <button class="toTop"></button>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

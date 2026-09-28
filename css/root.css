@@ -1,0 +1,22 @@
+:root {
+  --theme-color: #391e88;
+
+  --text-white: #fff;
+  --text-black: #000;
+  --text-black-light: #333;
+
+  --btn-white: #fff;
+  --slide-dot-gray: #c0c0c0;
+  --page-indicator-current: #f1ebf8;
+
+  --bg-white: #fff;
+  --bg-gray: #f0f0f0;
+  --bg-gray-2: #f7f7f7;
+  --bg-header: #21054d;
+  --bg-footer: #120e19;
+
+  --border-yellow: #f5f534;
+  --border-pink: #b067cf;
+
+  --copyright: #a798b7;
+}
